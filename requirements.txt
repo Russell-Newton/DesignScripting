@@ -1,0 +1,6 @@
+docutils>=0.18
+sphinx
+sphinx-rtd-theme
+sphinx-design
+sphinxcontrib-youtube
+sphinx-copybutton

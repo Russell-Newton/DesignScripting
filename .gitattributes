@@ -1,0 +1,6 @@
+* text=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.3dm binary
