@@ -1,0 +1,96 @@
+:root {
+    /* GT Primary */
+    --gt-gold: #B3A369;
+    --gt-navy: #003057;
+    --gt-black: #262626;
+
+    /* GT Accessible Tech Gold */
+    --gt-medium-gold: #A4925A; /* For use in large headline text in any digital media. */
+    --gt-dark-gold: #857437; /* For use in small bold text in any digital media. */
+
+    /* GT Secondary */
+    --gt-gray-matter: #54585A;
+    --gt-pi-mile: #D6DBD4;
+    --gt-buzz-gold: #EAAA00;
+    --gt-diploma: #F9F6E5;
+
+    /* GT CMYK Tertiary */
+    --gt-impact-purple: #5F249F;
+    --gt-bold-blue: #3A5DAE;
+    --gt-olympic-teal: #008C95;
+    --gt-electric-blue: #64CCC9;
+    --gt-canopy-lime: #A4D233;
+    --gt-rat-cap: #FFCD00;
+    --gt-new-horizon: #E04F39;
+
+    /* GT RGB Tertiary */
+    --gt-bright-purple: #7800FF;
+    --gt-bright-blue: #2961FF;
+    --gt-bright-electric: #00FFFF;
+    --gt-bright-canopy: #00EC9C;
+    --gt-bright-buzz: #FFCC00;
+    --gt-bright-horizon: #FF640F;
+
+    /* SCL Colors */
+    --scl-green: #306843;
+    --scl-medium-green: #207a3e;
+    --scl-bright-green: #258f48;
+
+    /* SM Colors */
+    --sm-navy: #00294b;
+    --sm-navy-grad: linear-gradient(to right, var(--gt-bold-blue) 0%, var(--sm-navy) 80%);
+    --sm-blue: #006DFF;
+    --sm-orange: #FF9200;
+    --sm-pink: #FF00EC;
+    --sm-green: #00FF13;
+    --sm-red: #BE0000;
+    --sm-light-gray: #969696;
+    --sm-dark-gray: #696969;
+
+    /* Sphinx Design Colors */
+    --sd-color-primary: #007bff;
+    --sd-color-secondary: #55555f;
+    --sd-color-success: #28a745;
+    --sd-color-info: #17a2b8;
+    --sd-color-warning: #f0b37e;
+    --sd-color-danger: #dc3545;
+    --sd-color-light: #f8f9fa;
+    --sd-color-muted: #6c757d;
+    --sd-color-dark: #212529;
+    --sd-color-primary-highlight: #0069d9;
+    --sd-color-secondary-highlight: #5c636a;
+    --sd-color-success-highlight: #228e3b;
+    --sd-color-info-highlight: #148a9c;
+    --sd-color-warning-highlight: #cc986b;
+    --sd-color-danger-highlight: #bb2d3b;
+    --sd-color-light-highlight: #d3d4d5;
+    --sd-color-muted-highlight: #5c636a;
+    --sd-color-dark-highlight: #1c1f23;
+    --sd-color-primary-text: #fff;
+    --sd-color-secondary-text: #fff;
+    --sd-color-success-text: #fff;
+    --sd-color-info-text: #fff;
+    --sd-color-warning-text: #212529;
+    --sd-color-danger-text: #fff;
+    --sd-color-light-text: #212529;
+    --sd-color-muted-text: #fff;
+    --sd-color-dark-text: #fff;
+    --sd-color-shadow: rgba(0, 0, 0, 0.15);
+    --sd-color-card-border: rgba(0, 0, 0, 0.125);
+    --sd-color-card-border-hover: hsla(231, 99%, 66%, 1);
+    --sd-color-card-background: transparent;
+    --sd-color-card-text: inherit;
+    --sd-color-card-header: transparent;
+    --sd-color-card-footer: transparent;
+    --sd-color-tabs-label-active: hsla(231, 99%, 66%, 1);
+    --sd-color-tabs-label-hover: hsla(231, 99%, 66%, 1);
+    --sd-color-tabs-label-inactive: hsl(0, 0%, 66%);
+    --sd-color-tabs-underline-active: hsla(231, 99%, 66%, 1);
+    --sd-color-tabs-underline-hover: rgba(178, 206, 245, 0.62);
+    --sd-color-tabs-underline-inactive: transparent;
+    --sd-color-tabs-overline: rgb(222, 222, 222);
+    --sd-color-tabs-underline: rgb(222, 222, 222);
+    --sd-fontsize-tabs-label: 1rem;
+    --sd-fontsize-dropdown-title: 1rem;
+    --sd-fontweight-dropdown-title: 700;
+}
