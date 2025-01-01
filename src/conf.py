@@ -20,7 +20,7 @@ from sphinx.util.nodes import clean_astext
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "Design Scripting Docs"
-copyright = f"(C) {datetime.now().year} Russell Newton. All rights reserved"
+copyright = f"{datetime.now().year}, Russell Newton"
 author = "Russell Newton"
 
 # -- General configuration ---------------------------------------------------
