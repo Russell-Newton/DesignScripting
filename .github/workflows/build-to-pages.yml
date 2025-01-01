@@ -1,0 +1,32 @@
+name: Deploy to GH Pages
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+    - name: Build and deploy Sphinx project
+      id: deployment
+      uses: sphinx-notes/pages@3.1
+      with:
+        documentation_path: "./src"
+        requirements_path: "./requirements.txt"
+        python_version: "3.12"
+        sphinx_build_options: "-T -E"
