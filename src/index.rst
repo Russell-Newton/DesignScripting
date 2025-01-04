@@ -36,5 +36,12 @@ Design Scripting
 
     week1/index
 
+.. toctree::
+    :titlesonly:
+    :caption: Resources
+    :glob:
+
+    resources/*
+
 .. |emspace| unicode:: \u2003
     :trim:

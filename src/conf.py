@@ -27,11 +27,12 @@ author = "Russell Newton"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.intersphinx",  # add links to other docs
+    "sphinx.ext.autodoc",
     "sphinx.ext.autosectionlabel",
+    "sphinx.ext.intersphinx",  # add links to other docs
+    "sphinx_copybutton",
     "sphinx_design",
     "sphinxcontrib.youtube",
-    "sphinx_copybutton",
 ]
 
 templates_path = ["_templates"]
@@ -61,6 +62,8 @@ html_theme_options = {
 html_show_sourcelink = (
     False  # Remove "view source code" from top of page (for html, not python)
 )
+
+add_module_names = False
 
 # -- Options for Linking  ----------------------------------------------------
 
