@@ -62,6 +62,12 @@ Some example string literals:
 
 .. _escape-sequence-summary:
 
+.. note::
+    In this class, we'll be working less with strings and more with data representing
+    numbers, vectors, and geometry. Strings can be convenient during debugging though,
+    and learning to work with strings is a good way to learn to work with more complex
+    data structures.
+
 Escape Sequences
 ^^^^^^^^^^^^^^^^
 
