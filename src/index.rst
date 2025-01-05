@@ -50,6 +50,7 @@ Design Scripting
     :titlesonly:
     :caption: Resources
     :glob:
+    :hidden:
 
     resources/*
 
