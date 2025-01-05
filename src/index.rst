@@ -25,6 +25,7 @@ Design Scripting
         :end-before: .. end usage
 
 .. topic:: Other Resources
+
     In addition to this website, some other resources may be useful during this course:
 
     * `Rhino <https://www.rhino3d.com/>`__
