@@ -9,6 +9,14 @@ created by chaining together statements in order to achieve a desired effect.
 Statements are formed via expressions, which can themselves be formed via simpler
 expressions.
 
+.. admonition:: Why Python?
+    Grasshopper in Rhino 8 supports scripting with both C# and Python, but Python
+    is much easier to get into and hack together solutions with.
+
+    Additionally, there's tons of support online for Python in general, from tutorials
+    to libraries and even to generative AI. You can also use Python in other applications
+    like Blender and Revit (using pyRevit).
+
 .. warning::
     This summary is not exhaustive. It is instead intended to cover the basic features
     of Python that might be used during this course.
