@@ -41,9 +41,11 @@ There are three exceptions to the rule that line breaks separate statements:
             + 1) == 2:
             ...
 
-        if (x
+        if (
+            x
             + 1
-            == 2:
+            == 2
+        ):
             ...
 
 #. Statements on the same line can be separated with a semicolon (``;``):
