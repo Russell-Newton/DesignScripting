@@ -11,7 +11,7 @@ distributed via this website. This way, it can be used as a reference when
 completing assignments, developing the final project, and any time in the future.
 
 All other course material such as the syllabus, schedule, and announcements will
-be distributed through Canvas.
+be distributed through Teams.
 
 .. end usage
 

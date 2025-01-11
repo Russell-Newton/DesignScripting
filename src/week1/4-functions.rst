@@ -132,7 +132,7 @@ is being used.
         # {'a': 3, 'b': 4}
 
     .. note::
-        We will learn about lists and dicts in the next in-person class, during week 3.
+        We will learn about lists and dicts in the next in-person class, during week 2.
 
     Another trick you can apply to a function definition is to make certain parameters
     either positional-only or keyword-only. Positional-only parameters must be supplied

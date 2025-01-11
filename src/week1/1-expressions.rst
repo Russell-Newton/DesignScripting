@@ -195,7 +195,7 @@ Operation      Description
 Some operators may be defined on some types of data while not on others. For example,
 subtracting two strings is not supported in Python, but adding two strings concatenates
 them. Further, different types of data may be used for both ``a`` and ``b``. Adding a number
-to a string concatenates that number to the string, and multiplying a string by an integer
+to a string is not supported, but multiplying a string by an integer
 repeats the string that many times. Comparing strings with ``<``, for example, shows if the
 first string would come before the second in alphabetical order.
 

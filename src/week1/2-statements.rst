@@ -116,7 +116,7 @@ will run 10 times. Each iteration of the loop increments ``x`` by one, and after
 
 .. note::
     There is another way to loop in Python: the ``for`` loop. We will learn about this
-    in the next in-person class, during week 3.
+    in the next in-person class, during week 2.
 
 ``break``
 ^^^^^^^^^

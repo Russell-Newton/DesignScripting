@@ -29,8 +29,8 @@ There are three exceptions to the rule that line breaks separate statements:
         x = 1 \
             + 2
 
-#. An expression contained within parentheses can be extended with line breaks. The
-   following are all equivalent:
+#. An expression contained within parentheses, brackets, and braces can be extended
+   with line breaks. The following are all equivalent:
 
    .. code-block:: python
 

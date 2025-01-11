@@ -7,7 +7,7 @@ your program know how it operates. An ``int`` behaves differently from a ``float
 which both behave differently from a ``str``.
 
 For right now, we'll cover some useful information about types that you'll likely want
-to know for the first week or two. During week 3, we'll go more into detail.
+to know for the first week or two. During week 2, we'll go more into detail.
 
 Python is Dynamically-Typed
 ===========================
