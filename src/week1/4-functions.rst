@@ -218,5 +218,5 @@ The following is a collection of helpful functions that you will probably find u
 during this course (copied from the :doc:`dedicated page <../resources/helpful-functions>`).
 
 .. include:: ../resources/helpful-functions.rst
-    :start-after: .. start list
-    :end-before: .. end list
+    :start-after: .. start funcs
+    :end-before: .. end funcs

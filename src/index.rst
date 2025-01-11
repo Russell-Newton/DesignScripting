@@ -46,6 +46,15 @@ Design Scripting
     :hidden:
 
     week1/index
+    week2/index
+
+.. toctree::
+    :titlesonly:
+    :caption: Assignments
+    :glob:
+    :hidden:
+
+    assignments/*
 
 .. toctree::
     :titlesonly:
