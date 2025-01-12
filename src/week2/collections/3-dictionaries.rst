@@ -23,7 +23,7 @@ Sets can be constructed with a dictionary literal:
 
 .. code-block:: python
 
-    my_set = {key1: value1, key2: value2, key3: value3}
+    my_dict = {key1: value1, key2: value2, key3: value3}
 
 Note that using empty braces (``{}``) creates an empty dictionary, not an empty set.
 
@@ -42,11 +42,6 @@ pairs. With each of these options, you can also provide additional keyword argum
     my_dict3 = dict(my_dict2)
     my_dict4 = dict([(key1, value1), (key2, value2)])
 
-Dictionary Operations
-=====================
-
-See `Mapping Types <https://docs.python.org/3.9/library/stdtypes.html#mapping-types-dict>`__.
-
 Iterating Over a Dictionary
 ===========================
 
@@ -60,14 +55,14 @@ If you want to iterate over a dictionary's values, you can do:
 
 .. code-block:: python
 
-    for value in dict.values():
+    for value in my_dict.values():
         ...
 
 If you want to iterate over the key-value pairs within a dictionary, you can instead do:
 
 .. code-block:: python
 
-    for key, value in dict.items():
+    for key, value in my_dict.items():
         ...
 
 Dictionary Comprehension
@@ -103,3 +98,7 @@ is equivalent to:
     Using ``**kwargs`` in the parameter list of a function creates a local
     variable ``kwargs`` that is a dictionary containing all additional positional
     inputs.
+
+.. include:: ../../resources/helpful-functions.rst
+    :start-after: .. start dict ops
+    :end-before: .. end dict ops

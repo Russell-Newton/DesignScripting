@@ -281,12 +281,6 @@ two inputs are given, the first is interpreted as ``start_inclusive``, the secon
 ``end_exclusive``, and ``step = 1``. With all 3, the third becomes the value used for
 ``step``.
 
-Common Sequence Operations
-==========================
-
-See `Common Sequence Operations <https://docs.python.org/3.9/library/stdtypes.html#common-sequence-operations>`__.
-
-Mutable Sequence Operations
-===========================
-
-See `Mutable Sequence Operations <https://docs.python.org/3.9/library/stdtypes.html#mutable-sequence-types>`__.
+.. include:: ../../resources/helpful-functions.rst
+    :start-after: .. start sequence ops
+    :end-before: .. end sequence ops

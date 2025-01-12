@@ -44,11 +44,6 @@ are mutable, which means they cannot be used as elements within a set. The
 :external+python:py:class:`frozenset` constructor can be used to create an immutable
 set, which *can* be contained within another set.
 
-Set Operations
-==============
-
-See `Set Types <https://docs.python.org/3.9/library/stdtypes.html#set-types-set-frozenset>`__.
-
 Iterating Over a Set
 ====================
 
@@ -72,3 +67,7 @@ This is equivalent to:
     my_set = set()
     for x in another_collection:
         my_set.add(some_operation(x))
+
+.. include:: ../../resources/helpful-functions.rst
+    :start-after: .. start set ops
+    :end-before: .. end set ops

@@ -34,6 +34,7 @@ Design Scripting
     * `CodingBat Python <https://codingbat.com/python>`__
     * `Rhino.Python Documentation <https://developer.rhino3d.com/guides/#rhinopythonguidesrhinopython>`__
     * `Python Scripting in Grasshopper <https://developer.rhino3d.com/guides/scripting/scripting-gh-python/>`__
+    * `Grasshopper data trees and Python <https://developer.rhino3d.com/guides/rhinopython/grasshopper-datatrees-and-python/>`__
 
 .. admonition:: Intellectual Property Acknowledgement
     :class: seealso

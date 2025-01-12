@@ -57,6 +57,13 @@ html_theme_options = {
     "source_repository": "https://github.com/Russell-Newton/DesignScripting/",
     "source_branch": "main",
     "source_directory": "src/",
+    "announcement": "<strong>Reminder:</strong> Assignment 0 is due Friday, January 17, 2025!",
+    "light_css_variables": {
+        "color-announcement-background": "#4f1717dd",
+    },
+    "dark_css_variables": {
+        "color-announcement-background": "#4f1717dd",
+    },
 }
 
 html_show_sourcelink = (
