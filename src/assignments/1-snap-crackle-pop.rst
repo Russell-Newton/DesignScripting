@@ -42,8 +42,8 @@ Edge Cases
   outputs should be set to 0.
 * ``start`` and ``end`` can be negative numbers.
 
-Example
--------
+Examples
+--------
 
 Inputs: ``start = 97``, ``end = 122``
 
@@ -51,6 +51,7 @@ Inputs: ``start = 97``, ``end = 122``
 
 .. code-block:: none
     :linenos:
+    :lineno-start: 0
 
     97
     Pop
@@ -79,6 +80,102 @@ Inputs: ``start = 97``, ``end = 122``
     121
 
 Outputs: ``num_snap = 8``, ``num_crackle = 5``, ``num_pop = 4``
+
+.. dropdown:: Example 2
+    :color: secondary
+
+    Inputs: ``start = 11``, ``end = 15``
+
+    ``out`` panel:
+
+    .. code-block:: none
+        :linenos:
+        :lineno-start: 0
+
+        11
+        Snap
+        13
+        Pop
+
+    Outputs: ``num_snap = 1``, ``num_crackle = 0``, ``num_pop = 1``
+
+.. dropdown:: Example 3
+    :color: secondary
+
+    Inputs: ``start = -40``, ``end = 6``
+
+    ``out`` panel:
+
+    .. code-block:: none
+        :linenos:
+        :lineno-start: 0
+
+        Crackle
+        Snap
+        -38
+        -37
+        Snap
+        CracklePop
+        -34
+        Snap
+        -32
+        -31
+        SnapCrackle
+        -29
+        Pop
+        Snap
+        -26
+        Crackle
+        Snap
+        -23
+        -22
+        SnapPop
+        Crackle
+        -19
+        Snap
+        -17
+        -16
+        SnapCrackle
+        Pop
+        -13
+        Snap
+        -11
+        Crackle
+        Snap
+        -8
+        Pop
+        Snap
+        Crackle
+        -4
+        Snap
+        -2
+        -1
+        SnapCracklePop
+        1
+        2
+        Snap
+        4
+        Crackle
+
+    Outputs: ``num_snap = 15``, ``num_crackle = 10``, ``num_pop = 6``
+
+.. dropdown:: Example 4
+    :color: secondary
+
+    Inputs: ``start = 10``, ``end = 0``
+
+    ``out`` panel is empty.
+
+    Outputs: ``num_snap = 0``, ``num_crackle = 0``, ``num_pop = 0``
+
+.. dropdown:: Example 5
+    :color: secondary
+
+    Inputs: ``start = 20``, ``end = 20``
+
+    ``out`` panel is empty.
+
+    Outputs: ``num_snap = 0``, ``num_crackle = 0``, ``num_pop = 0``
 
 Rubric
 ======
