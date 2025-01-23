@@ -32,9 +32,10 @@ Design Scripting
     * `Grasshopper Primer by ModeLab (old, but helpful) <http://grasshopperprimer.com/>`__
     * `Python Documentation (3.9, the version in Rhino) <https://docs.python.org/3.9/>`__
     * `CodingBat Python <https://codingbat.com/python>`__
-    * `Rhino.Python Documentation <https://developer.rhino3d.com/guides/#rhinopythonguidesrhinopython>`__
     * `Python Scripting in Grasshopper <https://developer.rhino3d.com/guides/scripting/scripting-gh-python/>`__
     * `Grasshopper data trees and Python <https://developer.rhino3d.com/guides/rhinopython/grasshopper-datatrees-and-python/>`__
+    * `Rhino.Python Documentation <https://developer.rhino3d.com/guides/#rhinopythonguidesrhinopython>`__
+    * `RhinoCommon API <https://developer.rhino3d.com/api/rhinocommon/?version=8.x>`__
 
 .. admonition:: Intellectual Property Acknowledgement
     :class: seealso
@@ -48,6 +49,7 @@ Design Scripting
 
     week1/index
     week2/index
+    week4/index
 
 .. toctree::
     :titlesonly:

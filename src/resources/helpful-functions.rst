@@ -134,10 +134,34 @@ or any object that has defined the ``__reversed__`` method.
 ``range``
 ---------
 
-.. autoclass:: builtins::range
+.. autofunction:: builtins::range
     :no-index:
 
 Useful in ``for`` loops.
+
+``zip``
+-------
+
+.. function:: zip(*iterables, strict = False) -> zip object
+    :no-index:
+
+    >>> list(zip('abcdefg', range(3), range(4)))
+    [('a', 0, 0), ('b', 1, 1), ('c', 2, 2)]
+
+    The zip object yields n-length tuples, where n is the number of iterables
+    passed as positional arguments to zip().  The i-th element in every tuple
+    comes from the i-th iterable argument to zip().  This continues until the
+    shortest argument is exhausted.
+
+    If strict is true and one of the arguments is exhausted before the others,
+    raise a ValueError.
+
+Useful in ``for`` loops in conjunction with tuple unpacking:
+
+.. code-block:: python
+
+    for item1, item2 in zip(collection1, collection2):
+        ...
 
 ``enumerate``
 -------------

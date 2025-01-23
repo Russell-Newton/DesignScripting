@@ -113,6 +113,20 @@ have a collection of 3-value collections, you could iterate over it like:
     for value1, value2, value3 in my_collection:
         ...
 
+.. important::
+
+    You can nest unpacking, if one of the items in your collection is always a collection
+    of constant size:
+
+    .. code-block:: python
+
+        # Here, collection contains 2-tuples
+        # The enumerate function creates a new collection of 2-tuples, where the first
+        #  item is the integer index of the second item. Because the second item is a
+        #  2-tuple, it can be further unpacked.
+        for idx, (item1, item2) in enumerate(collection):
+            ...
+
 If you only want some of the values, you can use a ``*_`` to capture all remaining
 items in the collection. So if your collection contains 5 items but you only want the
 first two, you can do:

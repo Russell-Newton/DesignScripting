@@ -1,3 +1,21 @@
 .figure-no-margin {
     margin: 0 !important;
 }
+
+figure.only-dark.light-background img {
+    background-color: #d4d0c8;
+    padding: 10px;
+}
+
+div.literal-block-wrapper div.code-block-caption:has(+ div.gh-panel) {
+    justify-content: flex-end;
+}
+
+div.literal-block-wrapper div.gh-panel {
+    margin-bottom: -0.25rem;
+}
+
+.code-block-caption+div[class]>.highlight {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
