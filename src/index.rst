@@ -24,6 +24,15 @@ Design Scripting
         :start-after: .. start usage
         :end-before: .. end usage
 
+.. admonition:: Attendance Checks
+    :class: important
+
+    Starting in Week 4, we will be doing attendance checks on CodingBat. These are
+    custom problems that I have made to get you all thinking with Python.
+
+    To access the problems, go to my `CodingBat account's home page <https://codingbat.com/home/rnewton31@gatech.edu/ds-attendance>`__.
+    Make sure you're logged in to your account before solving!
+
 .. topic:: Other Resources
 
     In addition to this website, some other resources may be useful during this course:
