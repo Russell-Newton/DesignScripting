@@ -198,6 +198,29 @@ raised.
     :no-index:
 
 .. end funcs
+
+Doing Math
+==========
+
+.. start math
+
+Be sure to check out the :external+python:py:mod:`math` package if you need to do
+math beyond simple arithmetic operations! Click on the :external+python:py:mod:`math` to
+proceed to the documentation.
+
+.. code-block:: python
+
+    from math import ...
+    # Where "..." is a comma-separated list of things you want to import
+
+or
+
+.. code-block:: python
+
+    import math
+    # Where what you want can be accessed like "math.whatever"
+
+.. end math
 .. start sequence ops
 
 String Operations

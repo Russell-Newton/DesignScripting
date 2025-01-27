@@ -7,6 +7,22 @@ figure.only-dark.light-background img {
     padding: 10px;
 }
 
+.float-left {
+    float: left;
+}
+
+.clear-left {
+    clear: left
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-right {
+    clear: right
+}
+
 div.literal-block-wrapper div.code-block-caption:has(+ div.gh-panel) {
     justify-content: flex-end;
 }
