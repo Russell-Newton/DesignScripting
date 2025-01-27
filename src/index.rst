@@ -25,7 +25,7 @@ Design Scripting
         :end-before: .. end usage
 
 .. admonition:: Attendance Checks
-    :class: important
+    :class: caution
 
     Starting in Week 4, we will be doing attendance checks on CodingBat. These are
     custom problems that I have made to get you all thinking with Python.
