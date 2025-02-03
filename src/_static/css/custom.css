@@ -23,6 +23,14 @@ figure.only-dark.light-background img {
     clear: right
 }
 
+.clear-left.clear-right {
+    clear: both;
+}
+
+.math-wrapper {
+    overflow: hidden;
+}
+
 div.literal-block-wrapper div.code-block-caption:has(+ div.gh-panel) {
     justify-content: flex-end;
 }

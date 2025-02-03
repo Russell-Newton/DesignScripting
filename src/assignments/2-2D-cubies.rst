@@ -352,6 +352,8 @@ Example
 This is an example of the inputs provided to the "Generate Faces" Python 3 script node
 and the expected output.
 
+.. _example-inputs:
+
 Inputs
 ------
 
@@ -416,6 +418,8 @@ Inputs
 
   This was generated with the "Seed" parameter set to 524 and the "Preparation Strategy"
   set to "Random Bubble Sort".
+
+.. _example-outputs:
 
 Outputs
 -------

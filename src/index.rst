@@ -59,6 +59,7 @@ Design Scripting
     week1/index
     week2/index
     week4/index
+    week5/index
 
 .. toctree::
     :titlesonly:
