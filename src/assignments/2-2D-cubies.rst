@@ -529,8 +529,9 @@ Creation of the Southeast and Southwest faces is facilitated by the two variable
 and ``w_southwest``, respectively. In the :ref:`figures above <indexing-stacks>`, take
 a look at the stack labeled ``(2, 1)``. The height of the stack is 2 (``w = 2``), the
 height of the stack to the Southeast at ``(3, 1)`` is 1 (``w_southeast = 1``), and the
-height of the stack to the Southwest is 0 (``w_southwest = 0``). The difference in heights
-to the Southeast at ``(2, 0)`` means 1 Southeast face will need to be added with
+height of the stack to the Southwest at ``(2, 0)`` is 0 (``w_southwest = 0``).
+
+The difference in heights to the Southeast means 1 Southeast face will need to be added with
 ``add_southeast_face``. I encourage you to provide the Southwest corner ``(u, v, w)``
 coordinates of these faces to ``add_southeast_face``. For Southeast faces, ``u`` will
 always be the same, but ``v`` and ``w`` will need to vary in order to find the other 3
