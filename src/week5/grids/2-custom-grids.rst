@@ -44,6 +44,7 @@ way to make this work.
 .. dropdown:: Source Code
 
     .. code-block:: python
+        :name: parallelogram-grid-source
 
         from math import cos, sin, radians
 

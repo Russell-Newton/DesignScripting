@@ -298,6 +298,8 @@ see 3 functions to implement:
     corner, and you'll need to figure out which ``(u, v, w)`` coordinates correspond to
     the other 3 corners of the face.
 
+.. _the-nested-loop:
+
 The Nested Loop
 ^^^^^^^^^^^^^^^
 
@@ -458,6 +460,112 @@ Tips
 #. I recommend starting by creating the North faces before trying to the Southeast and
    Southwest faces. This will help you make sure that you're getting the apparent heights
    correct.
+
+Clarifications
+==============
+
+Inside the double-nested ``for`` loop (see :ref:`above <the-nested-loop>`), you'll have
+access to 5 variables: ``u``, ``v``, ``w``, ``w_southeast``, and ``w_southwest``.
+
+The coordinates ``(u, v, w)`` correspond to a point in 3D space. This point is projected
+into 2D space with the ``get_point`` function.
+
+``u`` and ``v`` correspond to the stack you're adding faces for. In the figures below,
+each stack is shown with their corresponding ``(u, v)`` coordinates.
+
+.. figure:: ../_static/images/assignment2/indexing-stacks.png
+    :figwidth: 50%
+    :figclass: float-left
+    :name: indexing-stacks
+
+.. figure:: ../_static/images/assignment2/indexing-stacks-2.png
+    :figwidth: 50%
+    :figclass: float-right
+
+.. rst-class:: clear-left clear-right
+
+.. raw:: html
+
+    <br>
+
+When you're in the loop, ``(u, v, 0)`` corresponds to the western point of the bottom of
+the stack. Similarly, ``(u, v, w)`` corresponds to the western point of the north face
+of the entire stack. As such, t's recommended that you pass the ``u``, the ``v``, and the
+``w`` that you have access to from within the loop into ``add_north_face`` (i.e., run
+``add_north_face(u, v, w)`` verbatim).
+
+When implementing the ``add_north_face`` function, you pass in the ``(u, v, w)`` coordinates
+of the southwest corner, provided in variables as ``west_u``, ``west_v``, and ``w`` respectively.
+You can get the 2D point corresponding to that corner with ``get_point(west_u, west_v, w)``.
+
+For the other 3 corners of the face, ``w`` will stay the same, but you'll need to add
+1 to ``west_u``, ``west_v``, or both when calling ``get_point`` to get the 2D points
+corresponding to those corners. This will look incredibly similar to creating the closed
+polylines for the parallelogram grid created in Week 5. Open the :ref:`source code dropdown <parallelogram-grid-source>`
+and look down to the double-nested ``for`` loop under the comment "Generate cells" to see
+how ``u`` and ``v`` were modified in that situation. Of course, this is slightly different
+because you'll be using ``get_point`` with 3D coordinates instead of accessing a list of
+lists. You also won't need to repeat the first corner when calling rs.AddSrfPt_.
+
+Once you have the 4 corners, you'll need to provide them to rs.AddSrfPt_ as a list:
+
+.. code-block:: python
+
+    surface = rs.AddSrfPt([corner1, corner2, corner3, corner4])
+
+In the code block above, I use a list literal to create the list passed to rs.AddSrfPt_.
+Alternatively, you could create an empty list and append them each.
+
+.. important::
+
+    The corners provided to rs.AddSrfPt_ *MUST* each be the output of ``get_point``.
+    ``u``, ``v``, and ``w`` (and any modified names like ``west_u``) are 3D coordinates
+    that need to be converted to the corresponding 2D coordinates with ``get_point``.
+
+Southeast and Southwest Faces
+-----------------------------
+
+Creation of the Southeast and Southwest faces is facilitated by the two variables ``w_southeast``
+and ``w_southwest``, respectively. In the :ref:`figures above <indexing-stacks>`, take
+a look at the stack labeled ``(2, 1)``. The height of the stack is 2 (``w = 2``), the
+height of the stack to the Southeast at ``(3, 1)`` is 1 (``w_southeast = 1``), and the
+height of the stack to the Southwest is 0 (``w_southwest = 0``). The difference in heights
+to the Southeast at ``(2, 0)`` means 1 Southeast face will need to be added with
+``add_southeast_face``. I encourage you to provide the Southwest corner ``(u, v, w)``
+coordinates of these faces to ``add_southeast_face``. For Southeast faces, ``u`` will
+always be the same, but ``v`` and ``w`` will need to vary in order to find the other 3
+corners. I suggest providing the Southwest instead of the Northwest corner of the face
+so that you can create 1 face for each ``w_step`` ranging from ``w_southeast`` to ``w``
+(not including ``w``).
+
+.. admonition:: Important!!!
+    :class: error
+
+    That last sentence is a big hint, suggesting how you might want to create a ``for``
+    loop using :external+python:py:class:`range`.
+
+Similarly, the difference in heights to the Southwest means 2 Southwest faces will need
+to be added with ``add_southwest_face``, 1 for each ``w_step`` ranging from ``w_southwest``
+to ``w`` (not including ``w``). For Southwest faces, ``v`` is constant, while ``u`` and
+``w`` need to vary to find the other 3 corners.
+
+Additionally, if the stack you're working on is against the wall and ``w`` is *not* ``w_extent``,
+you'll need to add faces for each ``w_step`` ranging from ``w`` to ``w_extent`` (not including
+``w_extent``) on the wall.
+
+.. admonition:: ``(u, v, w)`` for Southeast and Southwest Faces
+    :class: hint
+
+    When adding Southeast and Southwest with ``add_southeast_face`` or ``add_southwest``
+    face, you'll sometimes need to add 1 to either the ``u`` or ``v`` provided to you
+    in the nested loop when calling the functions. Remember that you want to provide
+    the functions with the ``(u, v, w)`` coordinates of the Southwest corner of the face.
+    Increasing ``u`` by 1 shifts the corresponding 2D point (computed with ``get_point``)
+    down and right. Increasing ``v`` by 1 shifts the corresponding 2D point up and right.
+
+    Take some time to figure out when you'll need to add 1 to ``u`` and when to add 1
+    to ``v``. Or you can just try out different things and see what works.
+
 
 Submission
 ==========
