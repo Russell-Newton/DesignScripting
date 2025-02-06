@@ -238,8 +238,8 @@ Create a Square grid, and pipe the Points output into a Python 3 Script componen
         #   grid points corresponding to (x, y)
     ])
 
-Updating a Grid with Crawls
----------------------------
+Using a Crawl
+-------------
 
 The crawls created by the previous example aren't necessarily interesting for design, but
 by tweaking the neighbor selection or by introducing more information, you can
@@ -249,3 +249,10 @@ Additionally, you could change how the crawl is realized in the output. In the e
 the crawls create polylines, but you could do a lot more with a crawl. I've created a
 file demonstrating some things you can do once you have a simple crawl. You can download
 it here: :download:`simple-crawl.gh <../_static/grasshopper-files/simple-crawl.gh>`.
+
+The examples in the file are not exhaustive. There's plenty you can do, such as modifying
+grid cells the crawl touches, placing geometry at turns, and applying an attractor force
+to points near the crawl.
+
+Modifications of crawls, like those that can branch, can also be very interesting.
+We'll see branching crawls in Assignment 3.
