@@ -184,6 +184,30 @@ At the second ``raise NotImplementedError`` in ``create_clusters()``, you'll nee
     Do this first, or create some way to escape the loop, such as putting ``break`` somewhere
     inside the loop.
 
+Tips
+====
+
+#. It's very possible that you'll make an endless loop for yourself if you don't do the
+   bookkeeping correctly. I'd suggest starting with that, and if you're extra worried,
+   you can also add an additional loop condition. Replace the ``while unclaimed:`` line
+   with:
+
+   .. code-block:: python
+
+       loops = 0
+       while loops < grid_height * grid_width and unclaimed:
+           loops += 1
+
+   This will break you out of the loop after enough iterations to guarantee that each
+   point has been added to a cluster.
+
+#. You can comment out the ``raise NotImplementedError``\ s in the loop where you'll need
+   to create edges, and you'll be able to see if your implementations of :func:`get_cluster_seeds`
+   and :func:`select_point_to_add` works as expected. I recommend changing the gradient
+   to make the different clusters colored a little more obviously than the default green.
+#. Take a look back at the Week 6 :doc:`page on randomness <../week6/randomness>` for details
+   on functions that you might find helpful during your implementation.
+
 Submission
 ==========
 
