@@ -32,11 +32,11 @@ of points. Pass these into a Python 3 Script component with the following proper
 
 **Source Code:**
 
-.. code-block::
+.. code-block:: python
 
     import random
 
-    in_point.Z = random.randrange(-1, 1)  # These numbers can be whatever you want
+    in_point.Z = random.uniform(-1, 1)  # These numbers can be whatever you want
     out_point = in_point  # Explicitly set the out_point to the in_point
 
 Take the output of ``a``, and pass it into a Surface From Points component.
