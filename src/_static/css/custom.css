@@ -27,6 +27,22 @@ figure.only-dark.light-background img {
     clear: both;
 }
 
+.no-top-margin {
+    margin-top: 0 !important;
+}
+
+.no-left-margin {
+    margin-left: 0 !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0 !important;
+}
+
+.no-right-margin {
+    margin-right: 0 !important;
+}
+
 .math-wrapper {
     overflow: hidden;
 }
