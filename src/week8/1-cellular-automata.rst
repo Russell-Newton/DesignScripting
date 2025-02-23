@@ -33,6 +33,12 @@ rules each iteration:
 #. Dead cells with exactly three living neighbors become alive, all other dead cells
    remain dead.
 
+The "neighborhood" of a cell (i.e. the set of cells that are considered neighbors of
+any given cell) can be whatever you want, but in the Game of Life, the neighborhood of
+a cell is the 4 cells up, down, left, and right, and the 4 diagonally connected cells.
+This is called the `Moore neighborhood <https://en.wikipedia.org/wiki/Moore_neighborhood>`__
+and is not the only possible option.
+
 The Game of Life is played on an infinite or toroidal (boundary-wrapping) grid, where
 you can choose any initial state. The game plays itself, updating the grid indefinitely
 for you to see what your initial state gives rise to.
