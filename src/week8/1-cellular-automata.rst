@@ -117,5 +117,34 @@ results. You'll be implementing a simpler version of cellular automata for
 the iterations or randomly selecting which rule to apply for each case can also create
 interesting affects.
 
+.. dropdown:: Using the Grasshopper Script
+    :open:
+    :name: life-stack
+
+    You can download the Grasshopper script used to create the images shown above here:
+    :download:`life-stack.gh <../_static/grasshopper-files/life-stack.gh>`. To use it,
+    go to a "Life Viewer" website, including https://conwaylife.com/ or https://lazyslug.com/lifeviewer/.
+
+    Once there, make sure you update the rule used in the website to include a toroidal
+    grid. To do this, select the settings icon at the bottom right, click "Pattern",
+    then "Change Rule". This should display a popup that has a text entry box. Inside the
+    box, put in ``Life:T10,10``. This will update the rule to the Game of Life rule with
+    a toroidal 10x10 grid. If you'd like to use a differently sized grid, set the rule
+    to ``Life:Tx,y``, where ``x`` is the horizontal width and ``y`` is the vertical height
+    of the grid. The Python 3 component in the Grasshopper file won't work without the
+    toroidal grid defined.
+
+    From here, draw whatever you want in the grey box (you'll need to select the pencil
+    tool instead of the pan tool in the top left). When you've gotten something you like,
+    select everything (CTRL+A), then copy (CTRL+C). Paste it into the Panel component in
+    the Grasshopper script, and it should work. You can also adjust the number of
+    generations to display. If, at any point, a generation is computed with all cells
+    set to dead, the script terminates early.
+
+    One thing to note: these life viewer websites don't encode information about where
+    the pattern is placed inside the toroidal grid. The websites default to centering
+    the pattern within the grid, even if the pattern you drew wasn't centered. The Grasshopper
+    script does the same, but you can specify X and Y offsets, if you'd like.
+
 .. |glider-gun| replace:: *https://commons.wikimedia.org/w/index.php?curid=101736*
 .. _glider-gun: https://commons.wikimedia.org/w/index.php?curid=101736
