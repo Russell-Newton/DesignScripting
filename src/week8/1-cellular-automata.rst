@@ -117,13 +117,5 @@ results. You'll be implementing a simpler version of cellular automata for
 the iterations or randomly selecting which rule to apply for each case can also create
 interesting affects.
 
-Understanding Elementary Cellular Automata
-==========================================
-
-.. admonition:: TODO
-    :class: error
-
-    Fill out
-
 .. |glider-gun| replace:: *https://commons.wikimedia.org/w/index.php?curid=101736*
 .. _glider-gun: https://commons.wikimedia.org/w/index.php?curid=101736
