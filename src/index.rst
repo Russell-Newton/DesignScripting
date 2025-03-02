@@ -63,6 +63,7 @@ Design Scripting
     week6/index
     week7/index
     week8/index
+    week9/index
 
 .. toctree::
     :titlesonly:
@@ -70,6 +71,7 @@ Design Scripting
     :glob:
     :hidden:
 
+    assignments/final_project/index
     assignments/*
 
 .. toctree::

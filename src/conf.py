@@ -30,6 +30,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.intersphinx",  # add links to other docs
+    "sphinx.ext.todo",
     "sphinx_copybutton",
     "sphinx_design",
     "sphinxcontrib.youtube",
@@ -39,6 +40,8 @@ templates_path = ["_templates"]
 exclude_patterns = [
     "not-indexed/*.rst"
 ]
+
+todo_emit_warnings = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
