@@ -27,6 +27,7 @@ author = "Russell Newton"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "linuxdoc.rstFlatTable",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.intersphinx",  # add links to other docs

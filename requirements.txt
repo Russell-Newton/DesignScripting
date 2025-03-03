@@ -1,5 +1,6 @@
 docutils>=0.18
 furo
+linuxdoc
 sphinx
 sphinx-design
 sphinxcontrib-youtube

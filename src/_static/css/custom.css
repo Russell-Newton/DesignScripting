@@ -72,3 +72,11 @@ div.literal-block-wrapper div.gh-panel {
     background-color: currentColor;
     display: inline-block;
 }
+
+.underline {
+    text-decoration: underline;
+}
+
+.border-4 {
+    border-width: 4px !important;
+}
